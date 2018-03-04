@@ -246,45 +246,9 @@
       
     
     
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Home
-      </label>
-    
     <a href="." title="Home" class="md-nav__link md-nav__link--active">
       Home
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="toc">目次</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#commands" title="Commands" class="md-nav__link">
-    Commands
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-layout" title="Project layout" class="md-nav__link">
-    Project layout
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
     
   </li>
 
@@ -318,29 +282,6 @@
     
   
   
-    <label class="md-nav__title" for="toc">目次</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#commands" title="Commands" class="md-nav__link">
-    Commands
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-layout" title="Project layout" class="md-nav__link">
-    Project layout
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -356,92 +297,6 @@
                 
                 <h1 id="welcome-to-mkdocs">Welcome to MkDocs<a class="headerlink" href="#welcome-to-mkdocs" title="Permanent link">&para;</a></h1>
 <p>For full documentation visit <a href="http://mkdocs.org">mkdocs.org</a>.</p>
-<p>ある日、森の中、クマさんに出会った。</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>これはノートです。</p>
-</div>
-<p>Mkdocs とは静的サイトジェネレータです。
-コンテンツは基本的に markdown<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup> 形式で記述したソースファイルになります。</p>
-<p><span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-alt">Alt</kbd><span>+</span><kbd class="key-delete">Del</kbd></span></p>
-<h2 id="commands">Commands<a class="headerlink" href="#commands" title="Permanent link">&para;</a></h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs help</code> - Print this help message.</li>
-</ul>
-<h2 id="project-layout">Project layout<a class="headerlink" href="#project-layout" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</pre></div>
-
-
-<table>
-<thead>
-<tr>
-<th align="left">First Header</th>
-<th align="center">Second Header</th>
-<th align="right">Third Header</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">Left</td>
-<td align="center">Center</td>
-<td align="right">Right</td>
-</tr>
-<tr>
-<td align="left">Left</td>
-<td align="center">Center</td>
-<td align="right">Right</td>
-</tr>
-</tbody>
-</table>
-<div class="codehilite"><pre><span></span><span class="sd">&quot;&quot;&quot; Bubble sort &quot;&quot;&quot;</span>
-<span class="k">def</span> <span class="nf">bubble_sort</span><span class="p">(</span><span class="n">items</span><span class="p">):</span>
-<span class="hll">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">)):</span>
-</span><span class="hll">        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">i</span><span class="p">):</span>
-</span>            <span class="k">if</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]:</span>
-                <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
-</pre></div>
-
-
-<div class="codehilite"><pre><span></span><span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">Send</span><span class="p">(</span>
-    <span class="n">Socket</span> <span class="n">socket</span><span class="p">,</span> <span class="kt">byte</span><span class="p">[]</span> <span class="n">buffer</span><span class="p">,</span> <span class="kt">int</span> <span class="n">offset</span><span class="p">,</span> <span class="kt">int</span> <span class="n">size</span><span class="p">,</span> <span class="kt">int</span> <span class="n">timeout</span><span class="p">)</span> <span class="p">{</span>
-  <span class="kt">int</span> <span class="n">startTickCount</span> <span class="p">=</span> <span class="n">Environment</span><span class="p">.</span><span class="n">TickCount</span><span class="p">;</span>
-  <span class="kt">int</span> <span class="n">sent</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
-  <span class="k">do</span> <span class="p">{</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">Environment</span><span class="p">.</span><span class="n">TickCount</span> <span class="p">&gt;</span> <span class="n">startTickCount</span> <span class="p">+</span> <span class="n">timeout</span><span class="p">)</span>
-      <span class="k">throw</span> <span class="k">new</span> <span class="nf">Exception</span><span class="p">(</span><span class="s">&quot;Timeout.&quot;</span><span class="p">);</span>
-    <span class="k">try</span> <span class="p">{</span>
-      <span class="n">sent</span> <span class="p">+=</span> <span class="n">socket</span><span class="p">.</span><span class="n">Send</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="n">offset</span> <span class="p">+</span> <span class="n">sent</span><span class="p">,</span>
-        <span class="n">size</span> <span class="p">-</span> <span class="n">sent</span><span class="p">,</span> <span class="n">SocketFlags</span><span class="p">.</span><span class="n">None</span><span class="p">);</span>
-    <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">SocketException</span> <span class="n">ex</span><span class="p">)</span> <span class="p">{</span>
-      <span class="k">if</span> <span class="p">(</span><span class="n">ex</span><span class="p">.</span><span class="n">SocketErrorCode</span> <span class="p">==</span> <span class="n">SocketError</span><span class="p">.</span><span class="n">WouldBlock</span> <span class="p">||</span>
-          <span class="n">ex</span><span class="p">.</span><span class="n">SocketErrorCode</span> <span class="p">==</span> <span class="n">SocketError</span><span class="p">.</span><span class="n">IOPending</span> <span class="p">||</span>
-          <span class="n">ex</span><span class="p">.</span><span class="n">SocketErrorCode</span> <span class="p">==</span> <span class="n">SocketError</span><span class="p">.</span><span class="n">NoBufferSpaceAvailable</span><span class="p">)</span> <span class="p">{</span>
-        <span class="cm">/* Socket buffer is probably full, wait and try again */</span>
-        <span class="n">Thread</span><span class="p">.</span><span class="n">Sleep</span><span class="p">(</span><span class="m">30</span><span class="p">);</span>
-      <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-        <span class="k">throw</span> <span class="n">ex</span><span class="p">;</span>
-      <span class="p">}</span>
-    <span class="p">}</span>
-  <span class="p">}</span> <span class="k">while</span> <span class="p">(</span><span class="n">sent</span> <span class="p">&lt;</span> <span class="n">size</span><span class="p">);</span>
-<span class="p">}</span>
-</pre></div>
-
-
-<div class="footnote">
-<hr />
-<ol>
-<li id="fn:1">
-<p>文書を記述するための軽量マークアップ言語のひとつ&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
-</li>
-</ol>
-</div>
                 
                   
                 
