@@ -34,6 +34,8 @@ https://mrgenyu.github.io/MkDocsTest/
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
 
+https://<username>:<password>@github.com/<username>/<repo_name>.git
+
 First Header | Second Header | Third Header
 :----------- |:-------------:| -----------:
 Left         | Center        | Right
