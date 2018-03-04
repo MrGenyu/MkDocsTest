@@ -1,0 +1,39 @@
+# Project information
+site_name: 'Study Note'
+site_author: 'MrGenyu'
+# site_url: 'https://squidfunk.github.io/mkdocs-material/'
+
+# Repository
+repo_name: 'squidfunk/mkdocs-material'
+repo_url: 'https://github.com/squidfunk/mkdocs-material'
+
+# Copyright
+copyright: 'Copyright &copy; 2016 - 2017 Martin Donath'
+
+# Configuration
+pages:
+    - Home: index.md
+    - About: about.md
+theme:
+  name: 'material'
+  language: 'ja'
+  palette:
+    primary: 'teal'
+    accent: 'teal'
+  font:
+    text: 'Noto Sans JP'
+  logo:
+    icon: 'book'
+extra:
+  search:
+    language: 'jp'
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - footnotes
+  - pymdownx.keys
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
