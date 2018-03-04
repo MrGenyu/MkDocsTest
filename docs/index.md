@@ -14,6 +14,10 @@ Mkdocs とは静的サイトジェネレータです。
 
 [^1]: 文書を記述するための軽量マークアップ言語のひとつ
 
+https://mrgenyu.github.io/MkDocsTest/
+
+    chcp 65001
+
 ++ctrl+alt+delete++
 
 ## Commands
