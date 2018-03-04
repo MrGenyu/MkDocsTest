@@ -10,10 +10,12 @@ repo_url: 'https://github.com/squidfunk/mkdocs-material'
 # Copyright
 copyright: 'Copyright &copy; 2016 - 2017 Martin Donath'
 
-# Configuration
+#pages
 pages:
     - Home: index.md
     - About: about.md
+
+# Configuration
 theme:
   name: 'material'
   language: 'ja'

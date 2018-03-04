@@ -2,6 +2,8 @@
 
 For full documentation visit [mkdocs.org](http://mkdocs.org).
 
+
+
 ある日、森の中、クマさんに出会った。
 
 !!! Note
@@ -66,4 +68,3 @@ public static void Send(
   } while (sent < size);
 }
 ```
-
